@@ -69,3 +69,25 @@ reverseArray([1,3,5,7,9,11]); //[11,9,7,5,3,1]
 reverseArray([20,50,30,60,200]); //[200,60,30,50,20]
 reverseArray([1,-1,2,-3,5,-8,13]); //[13,-8,5,-3,2,-1,1]
 //End of reverseArray function
+
+//Start of FizzBuzz
+const fizzBuzz = () => {
+    let i=1;
+    while (i<101){ //while i is less than 100
+        if (i % 3 === 0 && i % 5 === 0) { //For every third iteration
+            console.log('FizzBuzz');//Print Fizz
+            i++;//increase i
+        } else if (i % 3 === 0) { //For every fifth iteration
+            console.log('Fizz'); //Priint Buzz
+            i++;//increase i
+        } else if (i % 5 === 0){
+            console.log('Buzz'); //Print FizzBuzz
+            i++;//increase i
+        } else { //every normal iteration
+            console.log(i);//print the number
+            i++//increase i
+        }
+    }
+}
+//End of FizzBuzz
+//fizBuzz();
